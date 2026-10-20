@@ -1,0 +1,8 @@
+// Problem: Seating
+// Platform: codechef
+// Language: false
+// Verdict: Accepted
+// URL: https://www.codechef.com/viewsolution/1366829002
+// Solved on: 2026-10-20T09:55:52.226Z
+
+// source not captured automatically - open the solution page and copy it manually
