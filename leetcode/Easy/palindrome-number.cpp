@@ -4,28 +4,21 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/palindrome-number/
-// Solved on: 2026-10-28T03:32:39.892Z
+// Solved on: 2026-11-04T05:11:36.457Z
 
 class Solution {
 public:
     bool isPalindrome(int x) {
-        bool as=x>0;
-       long long sums =0; 
-       int b=x;
-
-       while(x!=0){
-        int z=x%10; 
-        sums=z+sums*10; 
-        x=x/10; 
-
-       }
-       if(as){
-        return sums==b;
-       }
-       else{
-        return -sums==b;
-       }
-
-    
+        if(x < 0){
+            return false;
+        }
+        int num = x;
+        long long int n = 0;
+        while(x > 0){
+            n += x % 10;
+            n *= 10;
+            x /= 10;
+        }
+        return (num == n/10);
     }
 };
